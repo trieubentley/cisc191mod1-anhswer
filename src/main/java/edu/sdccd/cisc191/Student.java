@@ -51,6 +51,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{name=" + name + ", gpa='" + gpa + "', id=" + id + "}";
+        return "Student{id=" + id + ", name='" + name + "', gpa=" + gpa + "}";
     }
 }
