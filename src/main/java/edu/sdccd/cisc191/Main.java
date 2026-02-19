@@ -13,7 +13,7 @@ public class Main {
                 new Student("James", 2.3, 103),
                 new Student("Sean", 4.0, 104),
                 new Student("Cher", 1.25, 105),
-                new Student("Beyonce", 5.0, 106)
+                new Student("Beyonce", 4.0, 106)
         };
         // - original order
         System.out.println("Original Order");
