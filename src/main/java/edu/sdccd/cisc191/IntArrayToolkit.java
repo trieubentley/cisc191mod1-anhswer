@@ -17,27 +17,59 @@ public class IntArrayToolkit {
      * @throws IllegalArgumentException if a is null
      */
     public static int sum(int[] a) {
-        // TODO: implement
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (a == null) {
+            throw new IllegalArgumentException("Input array cannot be null");
     }
 
-    /**
-     * Returns the maximum value in the array.
-     * @throws IllegalArgumentException if a is null or empty
-     */
-    public static int max(int[] a) {
-        // TODO: implement
-        throw new UnsupportedOperationException("Not implemented yet");
+        int total = 0;
+        for (int value : a) {
+            total += value;
+        }
+
+        return total;
+
     }
 
-    /**
-     * Returns the index of the first occurrence of target, or -1 if not found.
-     * @throws IllegalArgumentException if a is null
-     */
-    public static int indexOf(int[] a, int target) {
-        // TODO: implement
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
+        /**
+         * Returns the maximum value in the array.
+         * @throws IllegalArgumentException if a is null or empty
+         */
+
+        public static int max(int[] a) {
+            // TODO: implement
+            if (a == null || a.length == 0) {
+                throw new IllegalArgumentException("Array cannot be null or empty");
+            }
+
+            int max = a[0];
+            for (int i = 1; i < a.length; i++) {
+                if (a[i] > max) {
+                    max = a[i];
+                }
+            }
+
+            return max;
+        }
+
+
+        /**
+         * Returns the index of the first occurrence of target, or -1 if not found.
+         * @throws IllegalArgumentException if a is null
+         */
+        public static int indexOf(int[] a, int target) {
+            // TODO: implement
+            if (a == null) {
+                throw new IllegalArgumentException("Array cannot be null");
+            }
+
+            for (int i = 0; i < a.length; i++) {
+                if (a[i] == target) {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
 
     /**
      * Returns a NEW array containing the same values as a, sorted ascending.
@@ -46,6 +78,12 @@ public class IntArrayToolkit {
      */
     public static int[] copySortedAscending(int[] a) {
         // TODO: implement (hint: defensive copy + Arrays.sort)
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (a == null) {
+            throw new IllegalArgumentException("Array cannot be null");
+        }
+
+        int[] copy = Arrays.copyOf(a, a.length);
+        Arrays.sort(copy);
+        return copy;
     }
 }
