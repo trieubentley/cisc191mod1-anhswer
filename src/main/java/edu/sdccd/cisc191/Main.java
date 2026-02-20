@@ -5,7 +5,7 @@ package edu.sdccd.cisc191;
  * This is primarily for your video demo.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         // TODO: Create at least 6 students and demonstrate:
         Student[] students = {
                 new Student("Dylan", 4.0, 101),
