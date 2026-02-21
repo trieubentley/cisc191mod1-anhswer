@@ -36,7 +36,6 @@ public class IntArrayToolkit {
          */
 
         public static int max(int[] a) {
-            // TODO: implement
             if (a == null || a.length == 0) {
                 throw new IllegalArgumentException("Array cannot be null or empty");
             }
@@ -57,7 +56,6 @@ public class IntArrayToolkit {
          * @throws IllegalArgumentException if a is null
          */
         public static int indexOf(int[] a, int target) {
-            // TODO: implement
             if (a == null) {
                 throw new IllegalArgumentException("Array cannot be null");
             }
@@ -77,7 +75,6 @@ public class IntArrayToolkit {
      * @throws IllegalArgumentException if a is null
      */
     public static int[] copySortedAscending(int[] a) {
-        // TODO: implement (hint: defensive copy + Arrays.sort)
         if (a == null) {
             throw new IllegalArgumentException("Array cannot be null");
         }
