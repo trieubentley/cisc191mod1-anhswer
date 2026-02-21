@@ -6,7 +6,6 @@ package edu.sdccd.cisc191;
  */
 public class Main {
     public static void main (String[] args) {
-        // TODO: Create at least 6 students and demonstrate:
         Student[] students = {
                 new Student("Dylan", 4.0, 101),
                 new Student("Martin", 3.85, 102),
