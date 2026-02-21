@@ -29,7 +29,7 @@ public class Student {
         }
 
         if (id <= 0) {
-            throw new IllegalArgumentException("ID must be over than 0");
+            throw new IllegalArgumentException("ID must be greater than 0");
         }
 
         this.name = name;
