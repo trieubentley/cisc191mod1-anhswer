@@ -20,7 +20,7 @@ public class Main {
             System.out.println(s);
         }
 
-        // - sorted-by-GPA order
+        // - sorted-by-GPA order (Descending)
         System.out.println("Sorted by GPA (Descending)");
         Student[] sorted = StudentArrayToolkit.copySortedByGpaDesc(students);
         for (Student s : sorted) {
